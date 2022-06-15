@@ -1,0 +1,21 @@
+<div class="box">
+  <div class="contain">
+    <div class="boxLeft">
+      <div class="textTask">Task list</div>
+      <div class="title">
+        <div class="thorpCol">#</div>
+        <div class="taskCol">Task</div>
+        <div class="checkCol">Check</div>
+        <div class="doneCol ">DONE/IN PROGRES</div>
+        <div class="editCol">Edit</div>
+        <div class="deleteCol">Delete</div>
+      </div>
+      <app-table [createTable]="arrElem" (fromChildHideBox)="getInfo($event)" ></app-table>
+    </div>
+    <div class="boxRight">
+      <div class="textAdd">Add new task</div>
+      <input type="text" placeholder="write here..." [(ngModel)]="inputAdd" class="inputText">
+      <button type="button" class="button" (click)="add()">Add</button>
+    </div>
+  </div>
+</div>

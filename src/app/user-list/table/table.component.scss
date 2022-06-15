@@ -1,0 +1,77 @@
+.contain {
+    display: flex;
+    width: 76%;
+    margin: 10px auto;
+    justify-content: space-between;
+  }
+  
+  .bottom {
+    display: flex;
+    margin: 10px auto;
+    justify-content: center;
+  }
+  
+   .saveText {
+    width: 50%;
+    margin: 0px;
+  }
+  
+  .creatBox {
+    display: flex;
+    align-items: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 5px;
+  }
+    
+  .taskCol,
+  .checkCol,
+  .doneCol {
+    text-align: center;
+    width: 20%;
+    margin: 5px;
+    font-size: 15px;
+  }
+  
+  .editCol,
+  .deleteCol {
+    text-align: center;
+    width: calc(35%/2);
+    margin-top: 5px;
+  }
+  
+  .thorpCol {
+    box-sizing: border-box;
+    text-align: center;
+    width: 5%;
+  }
+  
+  .editBtn {
+    background-color: rgb(231, 198, 10);
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid transparent;
+  }
+  
+  .deletBtn {
+    background-color: red;
+    color: white;
+    height: 30px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid transparent;
+  }
+  
+  .doneText {
+    font-size: 10px;
+  }
+  
+  .btnSave {
+    color: white;
+    height: 30px;
+    width: 20%;
+    background-color: rgb(45, 167, 45);
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 3px;
+  }
+  

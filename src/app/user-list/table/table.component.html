@@ -1,0 +1,15 @@
+ <div class="creatBox" *ngFor="let elem of createTable;index as i">
+   <div class="thorpCol">{{i+1}}</div>
+   <div class="taskCol">{{elem.task}}</div>
+   <input type="checkbox" class="checkCol" [checked]="elem.check" [disabled]="editStatus" (change)="checkTask(i)">
+   <div class="doneCol doneText" [ngStyle]="{'color': elem.check ? 'green':'red'}">{{elem.done}}</div>
+   <button class="editCol editBtn" type="button" (click)="edit(i)">Edit</button>
+   <button class="deleteCol deletBtn" type="button" [disabled]="!createTable[i].check" [disabled]="!elem.check" (click)="delete(i)"
+     [ngStyle]="{'background-color': elem.check ? 'red':'rgb(224, 70, 70)'}">Delete</button>
+ </div>
+ <ng-container *ngIf="hideBox===true">
+   <div class="bottom">
+     <input type="text" class="saveText" [(ngModel)]="inputSave">
+     <button type="button" class="btnSave" (click)="save()">save</button>
+   </div>
+ </ng-container>
